@@ -1,0 +1,19 @@
+<h2>My Fruits</h2>
+<ul class="fruit">
+  <li *ngFor="let hero of fruit" [class.Selected]="hero===selectFruit" (click)="Selectfruit(hero)">
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+
+<div *ngIf="selectFruit">
+  <h2>{{selectFruit.name |uppercase }}Details </h2>
+
+<div><span>id :</span>{{selectFruit.id}}</div>
+<div><span>fruit name:</span>
+  {{selectFruit.name}}
+</div>
+ </div>
+
+
+
