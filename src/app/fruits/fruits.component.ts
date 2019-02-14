@@ -14,7 +14,7 @@ export class FruitsComponent implements OnInit {
   constructor() { }
   ngOnInit() {
   }
-  Selectfruit(hero: Fruits): void {
+    onSelect(hero: Fruits): void {
       this.selectFruit = hero;
     }
 }
