@@ -6,14 +6,5 @@
 </ul>
 
 
-<div *ngIf="selectFruit">
-  <h2>{{selectFruit.name |uppercase }}Details </h2>
-
-<div><span>id :</span>{{selectFruit.id}}</div>
-<div><span>fruit name:</span>
-  {{selectFruit.name}}
-</div>
- </div>
-
-
+<app-fruits-deails [fruit]="selectFruit"></app-fruits-deails>
 

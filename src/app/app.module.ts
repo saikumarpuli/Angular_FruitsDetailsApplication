@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { AppComponent } from './app.component';
 import { FruitsComponent } from './fruits/fruits.component';
 import { FormsModule } from '@angular/forms';
-import { StudentComponent } from './student/student.component'; // <-- NgModel lives here
+import { StudentComponent } from './student/student.component';
+import { FruitsDeailsComponent } from './fruits-deails/fruits-deails.component'; // <-- NgModel lives here
 
 @NgModule({
   imports: [
@@ -13,9 +14,12 @@ import { StudentComponent } from './student/student.component'; // <-- NgModel l
   declarations: [
     AppComponent,
     FruitsComponent,
-    StudentComponent
+    StudentComponent,
+    FruitsDeailsComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 export class AppModule { }
