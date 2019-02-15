@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {Fruits} from '../fruits';
 
 @Component({
   selector: 'app-fruits-details',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FruitsDetailsComponent implements OnInit {
 
+  @Input() fruity: Fruits;
   constructor() { }
 
   ngOnInit() {
