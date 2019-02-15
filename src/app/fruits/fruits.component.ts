@@ -9,12 +9,12 @@ import {Lists} from '../fruitsList';
 })
 export class FruitsComponent implements OnInit {
   fruit = Lists;
-  selectFruit: Fruits;
+  selectedFruit: Fruits;
 
   constructor() { }
   ngOnInit() {
   }
-    onSelect(hero: Fruits): void {
-      this.selectFruit = hero;
+    onSelect(selectfruit: Fruits): void {
+      this.selectedFruit = selectfruit;
     }
 }

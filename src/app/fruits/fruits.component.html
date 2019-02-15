@@ -1,18 +1,18 @@
 <h2>My Fruits</h2>
 <ul class="fruit">
-  <li *ngFor="let hero of fruit" [class.Selected]="hero===selectFruit" (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  <li *ngFor="let fruitvalue of fruit" [class.Selected]="fruitvalue===selectFruit" (click)="onSelect(fruitvalue)">
+    <span class="badge">{{fruitvalue.id}}</span> {{fruitvalue.name}}
   </li>
 </ul>
 
 
-<div *ngIf="selectFruit">
-  <h2>{{selectFruit.name |uppercase }}Details </h2>
+<div *ngIf="selectedFruit">
+  <h2>{{selectedFruit.name |uppercase }}Details </h2>
 
-<div><span>id :</span>{{selectFruit.id}}</div>
+<div><span>id :</span>{{selectedFruit.id}}</div>
 <div>
   <label>
-    name:  <input [(ngModel)]="selectFruit.name" placeholder="name">
+    name:  <input [(ngModel)]="selectedFruit.name" placeholder="name">
   </label>
 </div>
  </div>
