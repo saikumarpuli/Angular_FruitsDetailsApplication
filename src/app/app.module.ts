@@ -17,7 +17,5 @@ import { StudentComponent } from './student/student.component';
    ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
-
 })
 export class AppModule { }
